@@ -20,32 +20,6 @@ let applicationController = ApplicationController(
 let applicationController = try injector.inject(ApplicationController.init)
 ```
 
-### But wait, there is more
-
-#### Simple injection:
-
-```swift
-injector.set(remoteConfigurationService)
-
-// later in your code
-let remoteConfiguration: RemoteConfigurationService = injector.get()!
-```
-
-#### Advanced Injection
-
-If you don't want to rely on type inference, you can specify the type explicitly:
-
-```swift
-protocol 🍌💕 {
-}
-
-struct 🐵: 🍌💕 {
-}
-
-let banana: 🍌💕 = injector.get(type: 🐨.self)!
-```
-
-
 ## Installation ##
 
 ### [Carthage]
@@ -81,7 +55,55 @@ use_frameworks!
 
 Then run `pod install` with CocoaPods 0.36 or newer.
 
+## But wait, there is more
+
+### Simple injection:
+
+```swift
+let chicken = 🐔()
+injector.set(chicken)
+
+// later in your code
+let chicken: 🐔 = injector.get()
+chicken.cockadoodle()
+```
+
+### Explicit type specification
+
+```swift
+protocol 🍌💕 {
+}
+
+struct 🐵: 🍌💕 {
+}
+
+let banana: 🍌💕 = injector.get(type: 🐨.self)!
+banana.peel()
+```
+
+### Automatic injection
+
+`Injector` can inject all the arguments for specified function using previously registered instances:
+
+```swift
+struct 🦁 {
+    let heart: ❤️
+    let innerKitten: 😺
+    init(heart: ❤️, innerKitten: 😺) {
+        self.heart = heart
+        self.innerKitten = innerKitten
+    }
+}
+
+let lion = try injector.inject(🦁.init)
+lion.meow()
+```
+
+If any of parameters is not registered with `injector`, it will throw an `InjectorError.TypeNotFound(T)` with first type injector failed to find. 
+You are not limited to initializer, you can use any method (with up to 30 arguments)
+
+
 ## Current Limitations
 
-* If your class has several initializers, `inject` will get confused. As a possible workaround, you can define a convinience function that doesn't have any 
-* Search time of `get` method is currently *O(n)*.
+* If your class has several initializers, `inject` will get confused. As a possible workaround, you can define a convinience class function that doesn't have any 
+* Complexity of `get` method is currently *O(n)*. PRs on improving this one are very much welcome. The only limitation is not to use Objective-C runtime magic.
