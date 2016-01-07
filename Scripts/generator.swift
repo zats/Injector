@@ -58,7 +58,7 @@ func curryDefinitionGenerator(arguments arguments: Int) -> String {
 
 func errorDefinition() -> String {
     let components = [
-        "enum InjectorError: ErrorType {",
+        "public enum InjectorError: ErrorType {",
         "\(padding)case TypeNotFound(Any.Type)",
         "}"
     ]
