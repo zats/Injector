@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C55463F1C3EDCA800744D7C /* Injector.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C55463D1C3EDCA800744D7C /* Injector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C5546401C3EDD2600744D7C /* Injector.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C55463D1C3EDCA800744D7C /* Injector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C5546411C3EDD2600744D7C /* Injector.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C55463D1C3EDCA800744D7C /* Injector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C5546421C3EDD2700744D7C /* Injector.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C55463D1C3EDCA800744D7C /* Injector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C5546441C3EDD4800744D7C /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5546431C3EDD4800744D7C /* Injector.swift */; };
-		5C5546451C3EDD4800744D7C /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5546431C3EDD4800744D7C /* Injector.swift */; };
-		5C5546461C3EDD4800744D7C /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5546431C3EDD4800744D7C /* Injector.swift */; };
-		5C5546471C3EDD4800744D7C /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5546431C3EDD4800744D7C /* Injector.swift */; };
-		5C55464A1C3EE18D00744D7C /* Injecting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5546491C3EE18D00744D7C /* Injecting.swift */; };
-		5C55464B1C3EE18D00744D7C /* Injecting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5546491C3EE18D00744D7C /* Injecting.swift */; };
-		5C55464C1C3EE18D00744D7C /* Injecting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5546491C3EE18D00744D7C /* Injecting.swift */; };
-		5C55464D1C3EE18D00744D7C /* Injecting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5546491C3EE18D00744D7C /* Injecting.swift */; };
+		5C5546551C3F344D00744D7C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C5546511C3F344D00744D7C /* Info.plist */; };
+		5C5546561C3F344D00744D7C /* Injecting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5546521C3F344D00744D7C /* Injecting.swift */; };
+		5C5546571C3F344D00744D7C /* Injector.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5546531C3F344D00744D7C /* Injector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C5546581C3F344D00744D7C /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5546541C3F344D00744D7C /* Injector.swift */; };
+		5C5546591C3F345C00744D7C /* Injecting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5546521C3F344D00744D7C /* Injecting.swift */; };
+		5C55465A1C3F345C00744D7C /* Injector.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5546531C3F344D00744D7C /* Injector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C55465B1C3F345C00744D7C /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5546541C3F344D00744D7C /* Injector.swift */; };
+		5C55465C1C3F345D00744D7C /* Injecting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5546521C3F344D00744D7C /* Injecting.swift */; };
+		5C55465D1C3F345D00744D7C /* Injector.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5546531C3F344D00744D7C /* Injector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C55465E1C3F345D00744D7C /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5546541C3F344D00744D7C /* Injector.swift */; };
+		5C55465F1C3F345E00744D7C /* Injecting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5546521C3F344D00744D7C /* Injecting.swift */; };
+		5C5546601C3F345E00744D7C /* Injector.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5546531C3F344D00744D7C /* Injector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C5546611C3F345E00744D7C /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5546541C3F344D00744D7C /* Injector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,11 +27,11 @@
 		5C5546191C3EDA5800744D7C /* Injector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Injector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C5546261C3EDA6200744D7C /* Injector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Injector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C5546331C3EDA7400744D7C /* Injector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Injector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C55463C1C3EDCA800744D7C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C55463D1C3EDCA800744D7C /* Injector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Injector.h; sourceTree = "<group>"; };
-		5C5546431C3EDD4800744D7C /* Injector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 		5C5546481C3EDE0600744D7C /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
-		5C5546491C3EE18D00744D7C /* Injecting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injecting.swift; sourceTree = "<group>"; };
+		5C5546511C3F344D00744D7C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C5546521C3F344D00744D7C /* Injecting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injecting.swift; sourceTree = "<group>"; };
+		5C5546531C3F344D00744D7C /* Injector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Injector.h; sourceTree = "<group>"; };
+		5C5546541C3F344D00744D7C /* Injector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +69,8 @@
 		5C5545FF1C3EDA3900744D7C = {
 			isa = PBXGroup;
 			children = (
+				5C5546501C3F344D00744D7C /* Sources */,
 				5C5546481C3EDE0600744D7C /* Playground.playground */,
-				5C55463B1C3EDCA800744D7C /* Source */,
 				5C55460C1C3EDA4600744D7C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,15 +86,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5C55463B1C3EDCA800744D7C /* Source */ = {
+		5C5546501C3F344D00744D7C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				5C55463C1C3EDCA800744D7C /* Info.plist */,
-				5C55463D1C3EDCA800744D7C /* Injector.h */,
-				5C5546431C3EDD4800744D7C /* Injector.swift */,
-				5C5546491C3EE18D00744D7C /* Injecting.swift */,
+				5C5546511C3F344D00744D7C /* Info.plist */,
+				5C5546521C3F344D00744D7C /* Injecting.swift */,
+				5C5546531C3F344D00744D7C /* Injector.h */,
+				5C5546541C3F344D00744D7C /* Injector.swift */,
 			);
-			path = Source;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,7 +104,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C55463F1C3EDCA800744D7C /* Injector.h in Headers */,
+				5C5546571C3F344D00744D7C /* Injector.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +112,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C5546401C3EDD2600744D7C /* Injector.h in Headers */,
+				5C5546601C3F345E00744D7C /* Injector.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +120,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C5546411C3EDD2600744D7C /* Injector.h in Headers */,
+				5C55465D1C3F345D00744D7C /* Injector.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,7 +128,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C5546421C3EDD2700744D7C /* Injector.h in Headers */,
+				5C55465A1C3F345C00744D7C /* Injector.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C5546551C3F344D00744D7C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C5546441C3EDD4800744D7C /* Injector.swift in Sources */,
-				5C55464A1C3EE18D00744D7C /* Injecting.swift in Sources */,
+				5C5546561C3F344D00744D7C /* Injecting.swift in Sources */,
+				5C5546581C3F344D00744D7C /* Injector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,8 +295,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C5546451C3EDD4800744D7C /* Injector.swift in Sources */,
-				5C55464B1C3EE18D00744D7C /* Injecting.swift in Sources */,
+				5C55465F1C3F345E00744D7C /* Injecting.swift in Sources */,
+				5C5546611C3F345E00744D7C /* Injector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,8 +304,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C5546461C3EDD4800744D7C /* Injector.swift in Sources */,
-				5C55464C1C3EE18D00744D7C /* Injecting.swift in Sources */,
+				5C55465C1C3F345D00744D7C /* Injecting.swift in Sources */,
+				5C55465E1C3F345D00744D7C /* Injector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,8 +313,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C5546471C3EDD4800744D7C /* Injector.swift in Sources */,
-				5C55464D1C3EE18D00744D7C /* Injecting.swift in Sources */,
+				5C5546591C3F345C00744D7C /* Injecting.swift in Sources */,
+				5C55465B1C3F345C00744D7C /* Injector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -427,7 +429,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -483,7 +485,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -535,7 +537,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -591,7 +593,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -642,7 +644,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -701,7 +703,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -753,7 +755,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
