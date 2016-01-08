@@ -64,7 +64,7 @@ func ==(lhs: 👨‍👩‍👧‍👦, rhs: 👨‍👩‍👧‍👦) -> Bool 
 }
 
 //: ## Injector
-
+//: Can be used to inject types with appropriate values through initializers
 let injector = Injector()
 let man = 👨‍()
 injector.set(man)
@@ -80,14 +80,26 @@ injector.set(boy)
 
 do {
     let family1 = try injector.inject(👨‍👩‍👧‍👦.init)
+    injector.set(family1)
+    
     let family2 = try injector.inject(👨‍👩‍👧.init)
+    injector.set(family2)
+
     assert(family1.girl == family2.girl) // true
 } catch let e as InjectorError {
     print("Failed to inject: \(e)")
 }
 
-// NSError.init takes 3 parameters, first one is NSString
-// Since we never registered an NSString with injector, following will always fail
+//: ## Works with any function
+//: You can also use `inject` to call any method with previously registered types
+
+func methodWithArguments(a: 👩‍, b: 👨‍👩‍👧‍👦) {
+    print(a, b)
+}
+
+try! injector.inject(methodWithArguments)
+
+//: `NSError.init` takes 3 parameters, first one is NSString. Following will fail, since we never registered an NSString with injector
 do {
     let url = try injector.inject(NSError.init)
 } catch {
