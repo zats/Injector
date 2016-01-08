@@ -107,3 +107,7 @@ You are not limited to initializer, you can use any method (with up to 30 argume
 
 * If your class has several initializers, `inject` will get confused. As a possible workaround, you can define a convinience class function that doesn't have any 
 * Complexity of `get` method is currently *O(n)*. PRs on improving this one are very much welcome. The only limitation is not to use Objective-C runtime magic.
+
+## Thanks
+
+* [gfontenot](https://github.com/gfontenot) for the inspiration and the original implementation of [Curry](https://github.com/thoughtbot/Curry/).
