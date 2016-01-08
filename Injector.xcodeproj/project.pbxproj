@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C5546551C3F344D00744D7C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C5546511C3F344D00744D7C /* Info.plist */; };
 		5C5546561C3F344D00744D7C /* Injecting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5546521C3F344D00744D7C /* Injecting.swift */; };
 		5C5546571C3F344D00744D7C /* Injector.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5546531C3F344D00744D7C /* Injector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C5546581C3F344D00744D7C /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5546541C3F344D00744D7C /* Injector.swift */; };
@@ -254,7 +253,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C5546551C3F344D00744D7C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
