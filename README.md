@@ -22,41 +22,6 @@ let applicationController = try injector.inject(ApplicationController.init)
 
 Please check out playground included with project for more examples.
 
-## Installation ##
-
-### [Carthage]
-
-[Carthage]: https://github.com/Carthage/Carthage
-
-```
-github "zats/Injector"
-```
-
-Then run `carthage update`.
-
-Follow the current instructions in [Carthage's README][carthage-installation]
-for up to date installation instructions.
-
-[carthage-installation]: https://github.com/Carthage/Carthage#adding-frameworks-to-an-application
-
-### [CocoaPods]
-
-[CocoaPods]: http://cocoapods.org
-
-Add the following to your [Podfile](http://guides.cocoapods.org/using/the-podfile.html):
-
-```ruby
-pod 'SwiftInjector'
-```
-
-You will also need to make sure you're opting into using frameworks:
-
-```ruby
-use_frameworks!
-```
-
-Then run `pod install` with CocoaPods 0.36 or newer.
-
 ## But wait, there is more
 
 ### Simple injection:
@@ -113,3 +78,38 @@ You are not limited to initializer, you can use any method (with up to 30 argume
 ## Thanks
 
 * [gfontenot](https://github.com/gfontenot) for the inspiration and the original implementation of [Curry](https://github.com/thoughtbot/Curry/).
+
+## Installation ##
+
+### [Carthage]
+
+[Carthage]: https://github.com/Carthage/Carthage
+
+```
+github "zats/Injector"
+```
+
+Then run `carthage update`.
+
+Follow the current instructions in [Carthage's README][carthage-installation]
+for up to date installation instructions.
+
+[carthage-installation]: https://github.com/Carthage/Carthage#adding-frameworks-to-an-application
+
+### [CocoaPods]
+
+[CocoaPods]: http://cocoapods.org
+
+Add the following to your [Podfile](http://guides.cocoapods.org/using/the-podfile.html):
+
+```ruby
+pod 'SwiftInjector'
+```
+
+You will also need to make sure you're opting into using frameworks:
+
+```ruby
+use_frameworks!
+```
+
+Then run `pod install` with CocoaPods 0.36 or newer.
