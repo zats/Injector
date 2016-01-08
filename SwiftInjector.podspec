@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name         = "Injector"
+  s.name         = "SwiftInjector"
   s.version      = "0.2"
   s.summary      = "Naive dependancy injection for Swift"
   s.license      = { :type => "MIT", :file => "LICENSE.md" }
@@ -16,6 +16,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/zats/Injector"
   s.source       = { :git => "https://github.com/zats/Injector.git", :tag => "#{s.version}" }
 
+  s.module_name = "Injector"
   s.ios.deployment_target = "8.0"
   s.osx.deployment_target = "10.10"
   s.watchos.deployment_target = "2.0"
