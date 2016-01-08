@@ -20,6 +20,8 @@ let applicationController = ApplicationController(
 let applicationController = try injector.inject(ApplicationController.init)
 ```
 
+Please check out playground included with project for more examples.
+
 ## Installation ##
 
 ### [Carthage]
