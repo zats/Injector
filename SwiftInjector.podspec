@@ -21,5 +21,5 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = "2.0"
   s.tvos.deployment_target = "9.0"
   s.requires_arc = true
-  s.source_files  = "Sources/**/*.{h,swift}"
+  s.source_files = "Sources/**/*.{h,swift}"
 end
