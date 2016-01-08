@@ -39,10 +39,17 @@ chicken.cockadoodle()
 
 ```swift
 protocol 🍌💕 {
+    func peel()
 }
 
 struct 🐵: 🍌💕 {
 }
+
+struct 🐨: 🍌💕 {
+}
+
+injector.set(🐵())
+injector.set(🐨())
 
 let banana: 🍌💕 = injector.get(type: 🐨.self)!
 banana.peel()
@@ -61,6 +68,9 @@ struct 🦁 {
         self.innerKitten = innerKitten
     }
 }
+
+injector.set(❤️())
+injector.set(😺())
 
 let lion = try injector.inject(🦁.init)
 lion.meow()
