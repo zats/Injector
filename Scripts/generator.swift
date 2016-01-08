@@ -45,7 +45,12 @@ func curryDefinitionGenerator(arguments arguments: Int) -> String {
     
     let joinedGuards = guards.joinWithSeparator("\n\(padding)")
     let implementation = "\(joinedGuards)\n\(padding)return \(functionDefinition)"  // guard let b: B = get() else { throw InjectorError.TypeNotFound(B) } return f(a, b)
-
+    let documentation = [
+        "/**",
+        " Injects specified method using arguments that has been registered with the `injector` instance.",
+        " If an argument has not been registered, function is going to throw.",
+        " */"
+    ]
     
     let curry = [
         "public func inject\(genericTypeDefinition)(function: \(functionArguments) -> \(returnType)) throws -> \(returnType) {",
@@ -53,12 +58,19 @@ func curryDefinitionGenerator(arguments arguments: Int) -> String {
         "}"
     ]
     
-    return curry.joinWithSeparator("\n")
+    return documentation.joinWithSeparator("\n") + "\n" + curry.joinWithSeparator("\n")
 }
 
 func errorDefinition() -> String {
     let components = [
+        "/**",
+        " Error being thrown during injection if an instance has not been registered with injector.",
+        " */",
         "public enum InjectorError: ErrorType {",
+        "\(padding)/**",
+        "\(padding) Error being thrown during injection if an instance has not been registered with injector.",
+        "\(padding) Contains first type that has not been registered with injector.",
+        "\(padding) */",
         "\(padding)case TypeNotFound(Any.Type)",
         "}"
     ]
@@ -86,7 +98,7 @@ let curries = (start..<limit).map { curryDefinitionGenerator(arguments: $0) }
 let joinedCurries = curries.joinWithSeparator("\n\n") + "\n"
 let output = errorDefinition() + "\n\n" + wrapInExtension(joinedCurries)
 
-let outputPath = "Source/Injecting.swift"
+let outputPath = "Sources/Injecting.swift"
 let currentPath = NSURL(fileURLWithPath: NSFileManager.defaultManager().currentDirectoryPath)
 let currySwiftPath = currentPath.URLByAppendingPathComponent(outputPath)
 
