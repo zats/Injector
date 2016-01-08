@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Injector Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/Injector" class="dashAnchor"></a>
+    <a title="Injector Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Injector Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/zats/Injector"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Injector Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Injector Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Injector.html">Injector</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/InjectorError.html">InjectorError</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Injector</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Injector</span></code></pre>
+
+                </div>
+              </div>
+            <p>Naive dependancy injection, allows to specify an instance to be injected later.
+Usage: </p>
+
+<pre class="highlight plaintext"><code>    injector.set("Hello world")
+    let x: String = injector.get()!
+    try injector.inject(myCar.callWithManyParameters)
+</code></pre>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8InjectorcFMS0_FT_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8InjectorcFMS0_FT_S0_">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>New instance of <code><a href="../Classes/Injector.html">Injector</a></code></p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector3setFS0_FP_T_"></a>
+                    <a name="//apple_ref/swift/Method/set(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector3setFS0_FP_T_">set(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Registers passed value with injector.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">set</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An instance to set on injector.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector3geturFS0_FT_GSqq__"></a>
+                    <a name="//apple_ref/swift/Method/get()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector3geturFS0_FT_GSqq__">get()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieves an instance of specified type registered with injector.</p>
+
+<div class="aside aside-seealso">
+    <p class="aside-title">Seealso</p>
+    <code><a href="../Classes/Injector.html#/s:FC8Injector8Injector3geturFS0_FT4typeMq__GSqq__">get(type:)</a></code>
+
+</div>
+
+<div class="aside aside-complexity">
+    <p class="aside-title">Complexity</p>
+    <code>O(n)</code> where <code>n</code> is the number of instances registered with injector.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="k">get</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instance regsitered with injector or <code>nil</code> if instance of specified type is not registered with this injector.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector3geturFS0_FT4typeMq__GSqq__"></a>
+                    <a name="//apple_ref/swift/Method/get(type:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector3geturFS0_FT4typeMq__GSqq__">get(type:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieves an instance of explicitly specified type registered with injector.</p>
+
+<div class="aside aside-complexity">
+    <p class="aside-title">Complexity</p>
+    <p><code>O(n)</code> where <code>n</code> is a number of instance registered.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="k">get</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">type</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>explicitly specified type of instance to return <code>T</code></p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instance registered with injector or <code>nil</code> if instance of specified type is not registered with this injector.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu0_rFS0_FzFq_q0_q0_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu0_rFS0_FzFq_q0_q0_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">B</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">B</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu1_rFS0_FzFTq_q0__q1_q1_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu1_rFS0_FzFTq_q0__q1_q1_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">C</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">C</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu2_rFS0_FzFTq_q0_q1__q2_q2_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu2_rFS0_FzFTq_q0_q1__q2_q2_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">D</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">D</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu3_rFS0_FzFTq_q0_q1_q2__q3_q3_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu3_rFS0_FzFTq_q0_q1_q2__q3_q3_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">E</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">E</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu4_rFS0_FzFTq_q0_q1_q2_q3__q4_q4_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu4_rFS0_FzFTq_q0_q1_q2_q3__q4_q4_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">F</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">F</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu5_rFS0_FzFTq_q0_q1_q2_q3_q4__q5_q5_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu5_rFS0_FzFTq_q0_q1_q2_q3_q4__q5_q5_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">G</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">G</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu6_rFS0_FzFTq_q0_q1_q2_q3_q4_q5__q6_q6_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu6_rFS0_FzFTq_q0_q1_q2_q3_q4_q5__q6_q6_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">H</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">H</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu7_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6__q7_q7_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu7_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6__q7_q7_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">I</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">I</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu8_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7__q8_q8_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu8_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7__q8_q8_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">J</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">J</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu9_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8__q9_q9_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu9_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8__q9_q9_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">K</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">K</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu10_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9__q10_q10_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu10_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9__q10_q10_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">L</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">L</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu11_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10__q11_q11_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu11_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10__q11_q11_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">M</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">M</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu12_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11__q12_q12_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu12_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11__q12_q12_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">N</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">N</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu13_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12__q13_q13_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu13_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12__q13_q13_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">O</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">O</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu14_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13__q14_q14_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu14_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13__q14_q14_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">P</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">P</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu15_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13_q14__q15_q15_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu15_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13_q14__q15_q15_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="p">,</span> <span class="kt">Q</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Q</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Q</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu16_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13_q14_q15__q16_q16_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu16_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13_q14_q15__q16_q16_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="p">,</span> <span class="kt">Q</span><span class="p">,</span> <span class="kt">R</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="p">,</span> <span class="kt">Q</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">R</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">R</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu17_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13_q14_q15_q16__q17_q17_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu17_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13_q14_q15_q16__q17_q17_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="p">,</span> <span class="kt">Q</span><span class="p">,</span> <span class="kt">R</span><span class="p">,</span> <span class="kt">S</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="p">,</span> <span class="kt">Q</span><span class="p">,</span> <span class="kt">R</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">S</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">S</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu18_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13_q14_q15_q16_q17__q18_q18_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu18_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13_q14_q15_q16_q17__q18_q18_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="p">,</span> <span class="kt">Q</span><span class="p">,</span> <span class="kt">R</span><span class="p">,</span> <span class="kt">S</span><span class="p">,</span> <span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="p">,</span> <span class="kt">Q</span><span class="p">,</span> <span class="kt">R</span><span class="p">,</span> <span class="kt">S</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">T</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu19_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13_q14_q15_q16_q17_q18__q19_q19_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu19_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13_q14_q15_q16_q17_q18__q19_q19_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="p">,</span> <span class="kt">Q</span><span class="p">,</span> <span class="kt">R</span><span class="p">,</span> <span class="kt">S</span><span class="p">,</span> <span class="kt">T</span><span class="p">,</span> <span class="kt">U</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="p">,</span> <span class="kt">Q</span><span class="p">,</span> <span class="kt">R</span><span class="p">,</span> <span class="kt">S</span><span class="p">,</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">U</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">U</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu20_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13_q14_q15_q16_q17_q18_q19__q20_q20_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu20_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13_q14_q15_q16_q17_q18_q19__q20_q20_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="p">,</span> <span class="kt">Q</span><span class="p">,</span> <span class="kt">R</span><span class="p">,</span> <span class="kt">S</span><span class="p">,</span> <span class="kt">T</span><span class="p">,</span> <span class="kt">U</span><span class="p">,</span> <span class="kt">V</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="p">,</span> <span class="kt">Q</span><span class="p">,</span> <span class="kt">R</span><span class="p">,</span> <span class="kt">S</span><span class="p">,</span> <span class="kt">T</span><span class="p">,</span> <span class="kt">U</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">V</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">V</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu21_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13_q14_q15_q16_q17_q18_q19_q20__q21_q21_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu21_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13_q14_q15_q16_q17_q18_q19_q20__q21_q21_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="p">,</span> <span class="kt">Q</span><span class="p">,</span> <span class="kt">R</span><span class="p">,</span> <span class="kt">S</span><span class="p">,</span> <span class="kt">T</span><span class="p">,</span> <span class="kt">U</span><span class="p">,</span> <span class="kt">V</span><span class="p">,</span> <span class="kt">W</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="p">,</span> <span class="kt">Q</span><span class="p">,</span> <span class="kt">R</span><span class="p">,</span> <span class="kt">S</span><span class="p">,</span> <span class="kt">T</span><span class="p">,</span> <span class="kt">U</span><span class="p">,</span> <span class="kt">V</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">W</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">W</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu22_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13_q14_q15_q16_q17_q18_q19_q20_q21__q22_q22_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu22_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13_q14_q15_q16_q17_q18_q19_q20_q21__q22_q22_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="p">,</span> <span class="kt">Q</span><span class="p">,</span> <span class="kt">R</span><span class="p">,</span> <span class="kt">S</span><span class="p">,</span> <span class="kt">T</span><span class="p">,</span> <span class="kt">U</span><span class="p">,</span> <span class="kt">V</span><span class="p">,</span> <span class="kt">W</span><span class="p">,</span> <span class="kt">X</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="p">,</span> <span class="kt">Q</span><span class="p">,</span> <span class="kt">R</span><span class="p">,</span> <span class="kt">S</span><span class="p">,</span> <span class="kt">T</span><span class="p">,</span> <span class="kt">U</span><span class="p">,</span> <span class="kt">V</span><span class="p">,</span> <span class="kt">W</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">X</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">X</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu23_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13_q14_q15_q16_q17_q18_q19_q20_q21_q22__q23_q23_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu23_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13_q14_q15_q16_q17_q18_q19_q20_q21_q22__q23_q23_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="p">,</span> <span class="kt">Q</span><span class="p">,</span> <span class="kt">R</span><span class="p">,</span> <span class="kt">S</span><span class="p">,</span> <span class="kt">T</span><span class="p">,</span> <span class="kt">U</span><span class="p">,</span> <span class="kt">V</span><span class="p">,</span> <span class="kt">W</span><span class="p">,</span> <span class="kt">X</span><span class="p">,</span> <span class="kt">Y</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="p">,</span> <span class="kt">Q</span><span class="p">,</span> <span class="kt">R</span><span class="p">,</span> <span class="kt">S</span><span class="p">,</span> <span class="kt">T</span><span class="p">,</span> <span class="kt">U</span><span class="p">,</span> <span class="kt">V</span><span class="p">,</span> <span class="kt">W</span><span class="p">,</span> <span class="kt">X</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Y</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Y</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu24_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13_q14_q15_q16_q17_q18_q19_q20_q21_q22_q23__q24_q24_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu24_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13_q14_q15_q16_q17_q18_q19_q20_q21_q22_q23__q24_q24_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="p">,</span> <span class="kt">Q</span><span class="p">,</span> <span class="kt">R</span><span class="p">,</span> <span class="kt">S</span><span class="p">,</span> <span class="kt">T</span><span class="p">,</span> <span class="kt">U</span><span class="p">,</span> <span class="kt">V</span><span class="p">,</span> <span class="kt">W</span><span class="p">,</span> <span class="kt">X</span><span class="p">,</span> <span class="kt">Y</span><span class="p">,</span> <span class="kt">Z</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="p">,</span> <span class="kt">Q</span><span class="p">,</span> <span class="kt">R</span><span class="p">,</span> <span class="kt">S</span><span class="p">,</span> <span class="kt">T</span><span class="p">,</span> <span class="kt">U</span><span class="p">,</span> <span class="kt">V</span><span class="p">,</span> <span class="kt">W</span><span class="p">,</span> <span class="kt">X</span><span class="p">,</span> <span class="kt">Y</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Z</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Z</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu25_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13_q14_q15_q16_q17_q18_q19_q20_q21_q22_q23_q24__q25_q25_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu25_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13_q14_q15_q16_q17_q18_q19_q20_q21_q22_q23_q24__q25_q25_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="p">,</span> <span class="kt">Q</span><span class="p">,</span> <span class="kt">R</span><span class="p">,</span> <span class="kt">S</span><span class="p">,</span> <span class="kt">T</span><span class="p">,</span> <span class="kt">U</span><span class="p">,</span> <span class="kt">V</span><span class="p">,</span> <span class="kt">W</span><span class="p">,</span> <span class="kt">X</span><span class="p">,</span> <span class="kt">Y</span><span class="p">,</span> <span class="kt">Z</span><span class="p">,</span> <span class="kt">AA</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="p">,</span> <span class="kt">Q</span><span class="p">,</span> <span class="kt">R</span><span class="p">,</span> <span class="kt">S</span><span class="p">,</span> <span class="kt">T</span><span class="p">,</span> <span class="kt">U</span><span class="p">,</span> <span class="kt">V</span><span class="p">,</span> <span class="kt">W</span><span class="p">,</span> <span class="kt">X</span><span class="p">,</span> <span class="kt">Y</span><span class="p">,</span> <span class="kt">Z</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AA</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">AA</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu26_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13_q14_q15_q16_q17_q18_q19_q20_q21_q22_q23_q24_q25__q26_q26_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu26_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13_q14_q15_q16_q17_q18_q19_q20_q21_q22_q23_q24_q25__q26_q26_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="p">,</span> <span class="kt">Q</span><span class="p">,</span> <span class="kt">R</span><span class="p">,</span> <span class="kt">S</span><span class="p">,</span> <span class="kt">T</span><span class="p">,</span> <span class="kt">U</span><span class="p">,</span> <span class="kt">V</span><span class="p">,</span> <span class="kt">W</span><span class="p">,</span> <span class="kt">X</span><span class="p">,</span> <span class="kt">Y</span><span class="p">,</span> <span class="kt">Z</span><span class="p">,</span> <span class="kt">AA</span><span class="p">,</span> <span class="kt">AB</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="p">,</span> <span class="kt">Q</span><span class="p">,</span> <span class="kt">R</span><span class="p">,</span> <span class="kt">S</span><span class="p">,</span> <span class="kt">T</span><span class="p">,</span> <span class="kt">U</span><span class="p">,</span> <span class="kt">V</span><span class="p">,</span> <span class="kt">W</span><span class="p">,</span> <span class="kt">X</span><span class="p">,</span> <span class="kt">Y</span><span class="p">,</span> <span class="kt">Z</span><span class="p">,</span> <span class="kt">AA</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AB</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">AB</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8Injector8Injector6injectu27_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13_q14_q15_q16_q17_q18_q19_q20_q21_q22_q23_q24_q25_q26__q27_q27_"></a>
+                    <a name="//apple_ref/swift/Method/inject(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8Injector8Injector6injectu27_rFS0_FzFTq_q0_q1_q2_q3_q4_q5_q6_q7_q8_q9_q10_q11_q12_q13_q14_q15_q16_q17_q18_q19_q20_q21_q22_q23_q24_q25_q26__q27_q27_">inject(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Injects specified method using arguments that has been registered with the <code>injector</code> instance.
+If an argument has not been registered, function is going to throw.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">inject</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="p">,</span> <span class="kt">Q</span><span class="p">,</span> <span class="kt">R</span><span class="p">,</span> <span class="kt">S</span><span class="p">,</span> <span class="kt">T</span><span class="p">,</span> <span class="kt">U</span><span class="p">,</span> <span class="kt">V</span><span class="p">,</span> <span class="kt">W</span><span class="p">,</span> <span class="kt">X</span><span class="p">,</span> <span class="kt">Y</span><span class="p">,</span> <span class="kt">Z</span><span class="p">,</span> <span class="kt">AA</span><span class="p">,</span> <span class="kt">AB</span><span class="p">,</span> <span class="kt">AC</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">function</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">,</span> <span class="kt">C</span><span class="p">,</span> <span class="kt">D</span><span class="p">,</span> <span class="kt">E</span><span class="p">,</span> <span class="kt">F</span><span class="p">,</span> <span class="kt">G</span><span class="p">,</span> <span class="kt">H</span><span class="p">,</span> <span class="kt">I</span><span class="p">,</span> <span class="kt">J</span><span class="p">,</span> <span class="kt">K</span><span class="p">,</span> <span class="kt">L</span><span class="p">,</span> <span class="kt">M</span><span class="p">,</span> <span class="kt">N</span><span class="p">,</span> <span class="kt">O</span><span class="p">,</span> <span class="kt">P</span><span class="p">,</span> <span class="kt">Q</span><span class="p">,</span> <span class="kt">R</span><span class="p">,</span> <span class="kt">S</span><span class="p">,</span> <span class="kt">T</span><span class="p">,</span> <span class="kt">U</span><span class="p">,</span> <span class="kt">V</span><span class="p">,</span> <span class="kt">W</span><span class="p">,</span> <span class="kt">X</span><span class="p">,</span> <span class="kt">Y</span><span class="p">,</span> <span class="kt">Z</span><span class="p">,</span> <span class="kt">AA</span><span class="p">,</span> <span class="kt">AB</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AC</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">AC</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="https://github.com/zats/Injector" target="_blank" rel="external">Sash Zats</a>. All rights reserved. (Last updated: 2016-01-07)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

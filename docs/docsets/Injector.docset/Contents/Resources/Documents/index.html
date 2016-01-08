@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Injector  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="Injector  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">Injector Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/zats/Injector"><img src="img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">Injector Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Injector  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/Injector.html">Injector</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/InjectorError.html">InjectorError</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <a href='#injector' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='injector'>Injector</h1>
+
+<p><strong>Warning</strong>: this project is not considered to be feature complete.</p>
+<a href='#before' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='before'>Before:</h3>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">applicationController</span> <span class="o">=</span> <span class="kt">ApplicationController</span><span class="p">(</span>
+    <span class="nv">persistanceService</span><span class="p">:</span> <span class="n">persistanceService</span><span class="p">,</span>
+    <span class="nv">analyticsService</span><span class="p">:</span> <span class="n">analyticsService</span><span class="p">,</span>
+    <span class="nv">remoteConfigurationService</span><span class="p">:</span> <span class="n">remoteConfigurationService</span><span class="p">,</span>
+    <span class="nv">authenticationController</span><span class="p">:</span> <span class="n">authenticationController</span><span class="p">,</span>
+    <span class="nv">networkProvider</span><span class="p">:</span> <span class="n">provider</span>
+<span class="p">)</span>
+</code></pre>
+<a href='#after' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='after'>After:</h3>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">applicationController</span> <span class="o">=</span> <span class="k">try</span> <span class="n">injector</span><span class="o">.</span><span class="nf">inject</span><span class="p">(</span><span class="kt">ApplicationController</span><span class="o">.</span><span class="kd">init</span><span class="p">)</span>
+</code></pre>
+
+<p>Please check out playground included with project for more examples.</p>
+<a href='#but_wait_there_is_more' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='but_wait_there_is_more'>But wait, there is more</h2>
+<a href='#simple_injection' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='simple_injection'>Simple injection:</h3>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">chicken</span> <span class="o">=</span> <span class="n">🐔</span><span class="p">()</span>
+<span class="n">injector</span><span class="o">.</span><span class="nf">set</span><span class="p">(</span><span class="n">chicken</span><span class="p">)</span>
+
+<span class="c1">// later in your code</span>
+<span class="k">let</span> <span class="nv">chicken</span><span class="p">:</span> <span class="n">🐔</span> <span class="o">=</span> <span class="n">injector</span><span class="o">.</span><span class="nf">get</span><span class="p">()</span>
+<span class="n">chicken</span><span class="o">.</span><span class="nf">cockadoodle</span><span class="p">()</span>
+</code></pre>
+<a href='#explicit_type_specification' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='explicit_type_specification'>Explicit type specification</h3>
+<pre class="highlight swift"><code><span class="kd">protocol</span> <span class="n">🍌💕</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">peel</span><span class="p">()</span>
+<span class="p">}</span>
+
+<span class="kd">struct</span> <span class="nv">🐵</span><span class="p">:</span> <span class="n">🍌💕</span> <span class="p">{</span>
+<span class="p">}</span>
+
+<span class="kd">struct</span> <span class="nv">🐨</span><span class="p">:</span> <span class="n">🍌💕</span> <span class="p">{</span>
+<span class="p">}</span>
+
+<span class="n">injector</span><span class="o">.</span><span class="nf">set</span><span class="p">(</span><span class="n">🐵</span><span class="p">())</span>
+<span class="n">injector</span><span class="o">.</span><span class="nf">set</span><span class="p">(</span><span class="n">🐨</span><span class="p">())</span>
+
+<span class="k">let</span> <span class="nv">banana</span><span class="p">:</span> <span class="n">🍌💕</span> <span class="o">=</span> <span class="n">injector</span><span class="o">.</span><span class="nf">get</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="n">🐨</span><span class="o">.</span><span class="k">self</span><span class="p">)</span><span class="o">!</span>
+<span class="n">banana</span><span class="o">.</span><span class="nf">peel</span><span class="p">()</span>
+</code></pre>
+<a href='#automatic_injection' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='automatic_injection'>Automatic injection</h3>
+
+<p><code>Injector</code> can inject all the arguments for specified function using previously registered instances:</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="n">🦁</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">heart</span><span class="p">:</span> <span class="err">❤️</span>
+    <span class="k">let</span> <span class="nv">innerKitten</span><span class="p">:</span> <span class="n">😺</span>
+    <span class="nf">init</span><span class="p">(</span><span class="nv">heart</span><span class="p">:</span> <span class="err">❤️</span><span class="p">,</span> <span class="nv">innerKitten</span><span class="p">:</span> <span class="n">😺</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">self</span><span class="o">.</span><span class="n">heart</span> <span class="o">=</span> <span class="n">heart</span>
+        <span class="k">self</span><span class="o">.</span><span class="n">innerKitten</span> <span class="o">=</span> <span class="n">innerKitten</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">injector</span><span class="o">.</span><span class="nf">set</span><span class="p">(</span><span class="err">❤️</span><span class="p">())</span>
+<span class="n">injector</span><span class="o">.</span><span class="nf">set</span><span class="p">(</span><span class="n">😺</span><span class="p">())</span>
+
+<span class="k">let</span> <span class="nv">lion</span> <span class="o">=</span> <span class="k">try</span> <span class="n">injector</span><span class="o">.</span><span class="nf">inject</span><span class="p">(</span><span class="n">🦁</span><span class="o">.</span><span class="kd">init</span><span class="p">)</span>
+<span class="n">lion</span><span class="o">.</span><span class="nf">meow</span><span class="p">()</span>
+</code></pre>
+
+<p>If any of parameters is not registered with <code>injector</code>, it will throw an <code>InjectorError.TypeNotFound(T)</code> with first type injector failed to find. 
+You are not limited to initializer, you can use any method (with up to 30 arguments)</p>
+<a href='#current_limitations' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='current_limitations'>Current Limitations</h2>
+<li>If your class has several initializers, <code>inject</code> will get confused. As a possible workaround, you can define a convinience class function that doesn&rsquo;t have any</li>
+<div class="aside aside-complexity">
+    <p class="aside-title">Complexity</p>
+    Complexity of <code>get</code> method is currently <em>O(n)</em>. PRs on improving this one are very much welcome. The only limitation is not to use Objective-C runtime magic.
+
+</div>
+<a href='#thanks' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='thanks'>Thanks</h2>
+
+<ul>
+<li><a href="https://github.com/gfontenot">gfontenot</a> for the inspiration and the original implementation of <a href="https://github.com/thoughtbot/Curry/">Curry</a>.</li>
+</ul>
+<a href='#installation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='installation'>Installation</h2>
+<a href='#a_href_https_github_com_carthage_carthage_carthage_a' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='a_href_https_github_com_carthage_carthage_carthage_a'><a href="https://github.com/Carthage/Carthage">Carthage</a></h3>
+<pre class="highlight plaintext"><code>github "zats/Injector"
+</code></pre>
+
+<p>Then run <code>carthage update</code>.</p>
+
+<p>Follow the current instructions in <a href="https://github.com/Carthage/Carthage#adding-frameworks-to-an-application">Carthage&rsquo;s README</a>
+for up to date installation instructions.</p>
+<a href='#a_href_http_cocoapods_org_cocoapods_a' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='a_href_http_cocoapods_org_cocoapods_a'><a href="http://cocoapods.org">CocoaPods</a></h3>
+
+<p>Add the following to your <a href="http://guides.cocoapods.org/using/the-podfile.html">Podfile</a>:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'SwiftInjector'</span>
+</code></pre>
+
+<p>You will also need to make sure you&rsquo;re opting into using frameworks:</p>
+<pre class="highlight ruby"><code><span class="n">use_frameworks!</span>
+</code></pre>
+
+<p>Then run <code>pod install</code> with CocoaPods 0.36 or newer.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="https://github.com/zats/Injector" target="_blank" rel="external">Sash Zats</a>. All rights reserved. (Last updated: 2016-01-07)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
