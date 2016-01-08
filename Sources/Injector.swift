@@ -3,12 +3,10 @@
     Naive dependancy injection, allows to specify an instance to be injected later.
     Usage: 
  
- - usage:
- 
     ```
         injector.set("Hello world")
         let x: String = injector.get()!
-        let x:
+        try injector.inject(myCar.callWithManyParameters)
     ```
  */
 public class Injector {
@@ -35,7 +33,7 @@ public class Injector {
      - returns: An instance regsitered with injector or `nil` if instance
      of specified type is not registered with this injector.
      - seealso: `get(type:)`
-     - complexity: `O(n)` where `n` is a number of instance registered.
+     - complexity: `O(n)` where `n` is the number of instances registered with injector.
      */
     public func get<T>() -> T? {
         for obj in storage {
