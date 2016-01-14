@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "SwiftInjector"
-  s.version      = "0.5"
+  s.version      = "0.5.1"
   s.summary      = "Naive dependancy injection for Swift"
   s.license      = { :type => "MIT", :file => "LICENSE.md" }
   s.author       = { "Sash Zats" => "sash@zats.io" }
