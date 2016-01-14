@@ -52,7 +52,7 @@ public class Injector {
      - seealso: `set()`
      - complexity: `O(n)` where `n` is the number of instances registered with injector.
      */
-    func remove<T>(`class`: T) -> T? {
+    func remove<T>(`class`: T.Type) -> T? {
         for (index, obj) in storage.enumerate() {
             if let obj = obj as? T {
                 storage.removeAtIndex(index)
