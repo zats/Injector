@@ -45,6 +45,24 @@ public class Injector {
     }
     
     /**
+     Removes an instance of specified type registered with injector.
+     
+     - returns: Found instance or `nil` if instance of specified type is not registered
+     with this injector.
+     - seealso: `set()`
+     - complexity: `O(n)` where `n` is the number of instances registered with injector.
+     */
+    func remove<T>(`class`: T) -> T? {
+        for (index, obj) in storage.enumerate() {
+            if let obj = obj as? T {
+                storage.removeAtIndex(index)
+                return obj
+            }
+        }
+        return nil
+    }
+    
+    /**
      Retrieves an instance of explicitly specified type registered with injector.
      
      - parameter type: explicitly specified type of instance to return `T`
